@@ -1,0 +1,69 @@
+{% load static %}
+<html lang="en">
+<head>
+    {% include 'header.html' %}
+    <title>Штучные пряники</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+<section class="section">
+    <div class="container ">
+
+        <h2 class="is-size-3 has-text-centered p-0 mb-3">Штучные пряники</h2>
+        <hr class="is-size-4 has-background-warning">
+        <div class="columns   is-multiline ">
+            {% for i in all_single %}
+            <div class="column  is-one-quarter column-single">
+              <div class="card">
+                      <div class="card-image">
+                        <p class="product-name has-text-centered">{{ i.single_product_name }}</p>
+                        <figure class="image is-5by4">
+
+                          <img src="{{ i.single_product_photo.url }}" alt="Placeholder image">
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                       
+
+                        <div class="content">
+                          <footer class="card-footer ">
+                            
+                            <!--<button class="productdt button is-info card-footer-item has-text-weight-bold">Детали</button>-->
+                            <button class="button is-warning card-footer-item has-text-weight-bold mt-2 ">Цена: <strong class=" "> &nbsp;{{ i.single_product_price }}&nbsp;</strong> руб/шт.</button>
+                            
+                          </footer>
+
+                          <footer class="card-footer mt-3">
+                            
+                            
+                            <form class="" action="{{ i.get_absolute_url }}">
+                                <button type="submit" class="button is-info card-footer-item has-text-weight-bold ml-1" >Подробнее.. </button>
+                            </form>
+                          </footer>
+                          
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            {% endfor %}
+    </div>
+    {% include 'info.html' %}
+</section>
+
+
+
+
+<script>
+  // burger menu
+const burgerIcon  = document.querySelector('#burger');
+const navbarMenu  = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+});
+
+</script>
+
+</body>
+</html>

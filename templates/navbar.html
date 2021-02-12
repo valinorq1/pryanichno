@@ -1,0 +1,84 @@
+   {% load static %}
+   <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(71692363, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/71692363" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+   <section class="section p-0 m-0">
+        <div class="container">
+            <div class="hero is-medium has-background ">
+
+                <img alt="Прянично" class="hero-background " src="{% static 'img/top-bg2.png' %}"  />
+                <div class="hero-head">
+                    <nav class="navbar  has-background-white">
+                        <div class="navbar-brand">
+                            <a href="{% url 'index' %}" class="navbar-item">
+                                <img src="{% static 'img/logo.png' %}" alt="site logo" style="max-height: 100px;" class="py-2 px-2" >
+                            </a>
+                            <a  class="navbar-burger has-text-black" id="burger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+
+                        <div class="navbar-menu" id="nav-links">
+                            <div class="navbar-end has-text-weight-bold has-text-black">
+                                <a class="navbar-item" href="{% url 'single_sweet' %}">Штучные Пряники</a>
+                                <a class="navbar-item" href="{% url 'weight_sweet' %}">Весовые пряники</a>
+                                <a class="navbar-item" href="{% url 'about_company' %}">О нас</a>
+                                
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+                <div class="hero-body">
+                    <div class="container">
+                      <h2 class="is-size-2 has-text-white  has-text-weight-bold inl">PRYANICHNO</h2>
+                      <h3 class="subtitle">
+                        <h2 class="has-text-white  is-size-6 has-text-weight-bold inl">БОЛЬШОЙ ВЫБОР ПРЯНИКОВ ИЗ  НАТУРАЛЬНЫХ ПРОДУКТОВ</h2> 
+                        <br />
+                       <figure>
+                        <a href="https://www.instagram.com/pryanichno_/">
+                            <img src="{% static 'img/inst2.png' %}" alt="instagram" class="image is-48x48 mt-5 social">
+                        </a>
+                        <a href="https://api.whatsapp.com/send?phone=79323185253">
+                            <img src="{% static 'img/whats3.png' %}" alt="instagram" class="image is-48x48 mt-5 social">
+                        </a>
+
+                        <a href="tel:+79232779111">
+                            <img src="{% static 'img/call.png' %}" alt="instagram" class="image is-48x48 mt-5 social">
+                        </a>
+                       </figure>
+                       
+                       
+                    </h3>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+<script>
+  // burger menu
+const burgerIcon  = document.querySelector('#burger');
+const navbarMenu  = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+});
+
+
+
+
+</script>

@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Roboto:wght@300&display=swap');
+
+.hero.has-background {
+  position: relative;
+  overflow: hidden;
+}
+.hero-background {
+  position: absolute;
+  object-fit: cover;
+  object-position: center center;
+  width: 100%;
+  height: 100%;
+
+}
+.hero-background.is-transparent {
+  opacity: 0.3;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+
+  font-family: 'Montserrat', sans-serif;
+}
+/*
+.is-horizontal-center {
+  justify-content: center;
+}*/
+
+.inl {
+  display: inline;
+  padding:5px;
+  border-radius: 3px 7px;
+  background-color: #a88d48;
+}
+
+.inl-soc {
+  display: inline;
+  padding:5px;
+  border-radius: 3px 7px;
+
+  min-width:320px;
+}
+
+.social {
+  display: inline;
+}
+
+.item-product {
+  broder:1px solid #000;
+}
+
+.product-name {
+  color:#824011;
+  font-size: 20px;
+  font-weight:600;
+}
+
+.price-block {
+  border-radius: 5px;
+  background-color: #824011;
+  height:25px;
+}
+
+.column-single {
+  display: flex;
+  justify-content: center;
+  min-height: 150px;
+  flex-direction: column;
+}

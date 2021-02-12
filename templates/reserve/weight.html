@@ -1,0 +1,83 @@
+{% load static %}
+<html lang="en">
+<head>
+    {% include 'header.html' %}
+    <title>Штучные пряники</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+<section class="section">
+    <div class="container">
+        <h2 class="is-size-3 has-text-centered p-0 mb-3">Весовые пряники</h2>
+        <hr class="is-size-4 has-background-warning">
+        <div class="columns is-multiline">
+            {% for i in all_weight %}
+            <div class="column is-6    ">
+                <div class="card ">
+                  <div class="media-content">
+                    <p class="title is-6  p-2 ">"{{ i.product_name }}"</p>
+                  </div>
+                    <div class="card-image is-flex is-horizontal-center">
+                      <figure class="image  has-text-centered" style="width:250px;height:250px;">
+                        <img src="{{ i.product_photo.url }}" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content ">
+                      <div class="media">
+                        
+                        <div class="media-content">
+                            
+                        </div>
+                      </div>
+                  
+                      <div class="content has-text-left">
+                       	
+
+                        <div class="control ">
+                          <div class="tags has-addons">
+                            <span class="tag is-danger  is-size-7">Цена:</span>
+                            <span class="tag is-light  is-size-7"><b>105 руб/кг</b></span>
+                          </div>
+
+                          <div class="tags has-addons">
+                            <span class="tag is-danger  is-size-7">От 4кг:</span>
+                            <span class="tag is-light  is-size-7"><b>90 руб/кг</b></span>
+                          </div>
+                        <strong>Заказать </strong>
+                          <div class="tags has-addons">
+                            <span class="tag has-background-danger  is-size-7">
+                                <span class="icon has-text-white">
+                                    <i class="fas fa-phone-square fa-lg"></i>
+                                </span>
+                            </span>
+                            <span class="tag is-light  is-size-7"><b><a href="tel:+78142332211">Позвонить</a></b></span>
+                            
+
+                            <span class="tag is-primary  is-size-7">
+                                <span class="icon ">
+                                    <i class="fa fa-whatsapp fa-lg"></i>
+                                </span>
+                            </span>
+                            <span class="tag is-light  is-size-7">
+                                <b><a href="https://api.whatsapp.com/send?phone=79234567890">Написать</a></b>
+                            </span>
+                          </div>
+
+                          
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            </div>
+            {% endfor %}
+    </div>
+</section>
+
+{% include 'info.html' %}
+
+
+
+    
+</body>
+</html>

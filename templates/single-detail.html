@@ -1,0 +1,190 @@
+{% load static %}
+<html lang="en">
+<head>
+    {% include 'header.html' %}
+    <title>Штучные пряники</title>
+</head>
+<body>
+    {% include 'navbar.html' %}
+
+<section class="section">
+    <div class="container ">
+        <h2 class="is-size-4 has-text-centered p-0 mb-3">Штучный пряник <strong class="product-name">"{{ single_product.single_product_name }}"</strong>"</h2>
+        <hr class="is-size-4 has-background-warning">
+        <div class="columns is-multiline ">
+            
+            <div class="column  is-two-fifths ">
+              <div class="card">
+                      <div class="card-image">
+
+                        <figure class="image is-256x256">
+                          <img src="{{ single_product.single_product_photo.url }}" alt="Placeholder image">
+                        </figure>
+                      </div>
+                      <div class="card-content">
+                       
+
+                        <div class="content">
+                          <footer class="card-footer">
+                            <button class="button is-warning card-footer-item has-text-weight-bold mt-2 ">Цена: <strong class=" "> &nbsp;{{ single_product.single_product_price }}&nbsp;</strong> руб/шт.</button>
+                            
+                            
+                          </footer>
+
+                          <footer class="card-footer">
+                            <button class="button is-success card-footer-item has-text-weight-bold productdt" >Купить</button>
+                            
+                            
+                          </footer>
+                          
+                        </div>
+                      </div>
+                    </div>
+            </div>
+
+            <div class="column  is-half ">
+              <h2 class="title is-size-5">Информация о товаре</h2>
+              <strong сlass="is-size-7">Состав: </strong>мука пшеничная 1 сорт, сахар-песок, инвертный сироп, вода, соль, гвоздика, маргарин, масло растительное, имбирь, корица, сода пищевая, кислота лимонная, повидло фруктовое, разрыхлитель.
+              <br />
+              <p class="has-text-weight-bold mt-5 is-size-6">Пищевая ценность в 100гр. Продукта:</p>
+              <p>
+                <ul>
+                  <li>Белки – 5,88</li>
+                  <li>Жиры – 6,27</li>
+                  <li>Углеводы – 71,84</li>
+                  <li>Калорийность – 372,0 кКал.</li>
+                </ul>
+              </p>
+
+              <p  class="mt-5"> 
+                <b>Способ хранения: </b>
+                Хранить в хорошо вентилируемых помещениях, не имеющих постороннего запаха при t 18 -+5 градусов и относительной влажности не более 75 %.
+                При соответствии условий хранения срок годности 45 дней.
+              </p>
+
+              <p>
+                <p class="has-text-weight-bold mt-5 is-size-6"> Начинка на Ваш выбор</h2>
+                <ul class="mt-2">
+                  <li>-Яблоко</li>
+                  <li>-Вишня</li>
+                  <li>-Чернослив</li>
+                  <li>-Лимон</li>
+                  <li>-Малина</li>
+                  <li>-Клубника</li>
+                  <li>-Апельсин</li>
+                  <li>-Чёрная&nbsp;смородина</li>
+                  <li>-Медовая</li>
+                  <li>-Клюква</li>
+                  <li>-Вареная&nbsp;сгущенка</li>
+                </ul>
+              </p>
+
+
+              <article class="message has-background-warning-light mt-3">
+            <div class="message-body">
+                
+                  <div class="icon-text">
+                    <span class="icon has-text-info">
+                      <i class="fas fa-info-circle"></i>
+                    </span>
+                    <span><strong class="has-text-danger"> При оптовых заказах действует гибкая система скидок <br /> </strong></span>
+                  </div>
+                
+                <div class="icon-text">
+                    <span class="icon has-text-success">
+                      <i class="fas fa-check-square"></i>
+                    </span>
+                    <span class="is-size-6">Конечную цену и дополнительную информацию Вы можете узнать связавшись с нами</span>
+                  </div>
+
+                 <br />
+                <span class="icon-text">
+                    <span class="icon ">
+                      <i class="fas fa-phone-square fa-lg"></i>
+                    </span>
+                    <span class="is-size-6"><a href="tel:+79232779111">Позвонить</a></span>
+                  </span>
+                    &nbsp;&nbsp;&nbsp;
+                  <span class="icon-text">
+                    <span class="icon ">
+                      <i class="fa fa-whatsapp fa-lg"></i>
+                    </span>
+                    <span class="is-size-6"><a href="https://api.whatsapp.com/send?phone=79323185253">Написать</a></span>
+                  </span>
+
+            </div>
+          </article>
+            </div>
+
+         
+    </div>
+
+</section>
+
+
+    
+
+
+<div class="modal" >
+  <div class="modal-background"></div>
+  <div class="modal-card" id="element_to_pop_up">
+    <header class="modal-card-head">
+      <p class="modal-card-title is-size-4">Покупка товара</p>
+      <button class="delete close_detail" aria-label="close"></button>
+    </header>
+    <section class="modal-card-body ">
+      <strong>Для покупки товара свяжитесь с нами удобным для вас способом </strong>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button is-danger"><span class="icon ">
+        <i class="fas fa-phone-square fa-lg"></i>
+      </span>
+      <span class="is-size-6"><a href="tel:+79232779111" class="has-text-white">Позвонить</a></span>
+    </span></button>
+    <button class="button is-success">
+      <span class="icon-text">
+        <span class="icon ">
+          <i class="fa fa-whatsapp fa-lg"></i>
+        </span>
+        <span class="is-size-6"><a href="https://api.whatsapp.com/send?phone=79323185253" class="has-text-white">Написать</a></span>
+      </span>
+    </button>
+    </footer>
+  </div>
+</div>
+<script>
+
+  // modal
+  const detailButton = document.querySelector('.productdt');
+  const modalBg = document.querySelector('.modal-background');
+  const modal = document.querySelector('.modal');
+  const close_modal = document.querySelector('.close_detail')
+
+  detailButton.addEventListener('click', () => {
+    modal.classList.add('is-active');
+  })
+
+  close_modal.addEventListener('click', () => {
+    modal.classList.remove('is-active');
+  });
+
+   
+
+</script>
+
+<script>
+  // burger menu
+const burgerIcon  = document.querySelector('#burger');
+const navbarMenu  = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+});
+
+
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,203 @@
+{% load static %}
+<html lang="en">
+<head>
+    {% include 'header.html' %}
+
+    <title>Прянично | Вкусные пряники для Вас</title>
+</head>
+
+<body>
+    
+    
+ {% include 'navbar.html' %}
+   <!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(71692363, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/71692363" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<section class="section">
+        <div class="container">
+            <h2 class="is-size-3 has-text-centered p-0 mb-3">Ассортимент</h2>
+            <hr class="is-size-4 has-background-warning">
+            <div class="columns  has-text-centered">
+                <div class="column"></div>
+                <div class="column">
+                	<a href="{% url 'single_sweet' %}">
+                		<div class="card">
+                			<div class="card-image">
+                				<figure class="image is-5by4">
+                					<img src="{% static 'img/single.jpg'%}" alt="Placeholder image">
+                				</figure>
+                			</div>
+                			<div class="card-content">
+                				<div class="media">
+
+                					<div class="media-content">
+                						<a href="{% url 'single_sweet' %}"><p class="title is-4">Штучные пряники</p></a>
+                					</div>
+                				</div>
+
+                				<div class="content">
+                					<a href="{% url 'single_sweet' %}">Смотреть ассортимент штучных пряников</a>
+                				</div>
+                			</div>
+                		</div>
+                	</a>
+            </div>
+                
+            <div class="column">
+            	<a href="{% url 'weight_sweet' %}">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-5by4">
+                        <img src="{% static 'img/weight.jpg'%}" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-content">
+                      <div class="media">
+                        
+                        <div class="media-content">
+                          <a href="{% url 'weight_sweet' %}"><p class="title is-4">Весовые</p></a>
+                        </div>
+                      </div>
+                  
+                      <div class="content">
+                        <a href="{% url 'weight_sweet' %}">Смотреть ассортимент весовых пряников</a>
+                      </div>
+                    </div>
+            </div>
+            </a>
+        </div>
+        <div class="column"></div>
+            
+        </div>
+    </section>
+
+<section class="section">
+        <div class="container has-text-centered has-background-warning-light">
+            <div class="columns has-text-centered has-background-warning-light m-3 has-text-left">
+                <div class="column">
+                    <h1 class="is-size-6 title">НАЧИНКА</h1>
+                    <hr class="is-size-4 has-background-warning">
+                    <p>
+                        <ul>
+                            <li>-Яблоко</li>
+                            <li>-Вишня</li>
+                            <li>-Чернослив</li>
+                            <li>-Лимон</li>
+                            <li>-Малина</li>
+                            <li>-Клубника</li>
+                            <li>-Апельсин</li>
+                            <li>-Чёрная&nbsp;смородина</li>
+                            <li>-Медовая</li>
+                            <li>-Клюква</li>
+                            <li>-Вареная&nbsp;сгущенка</li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="column">
+                    <h1 class="is-size-6 title">ОФОРМЛЕНИЕ</h1>
+                    <hr class="is-size-4 has-background-warning">
+                    <p>
+                        <ul>
+                            <li>- С глазурью</li>
+                            <li>- С изображением животных</li>
+                            <li>- С изображением предметов</li>
+                            <li>- Поздравительные</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="column">
+                    <h1 class="is-size-6 title">ПОДАРОЧНЫЕ</h1>
+                    <hr class="is-size-4 has-background-warning">
+                    <p>
+                        <ul>
+                            <li>- Сувениры</li>
+                            <li> - Новогодние</li>
+                            <li> - Постные</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <h2 class="has-text-centered has-text-weight-bold pb-5">ПРЕИМУЩЕСТВА НАШЕЙ КОМПАНИИ </h2>
+        <div class="container has-text-centered has-background-warning-light">
+            <div class="columns  m-3 has-text-left">
+                <div class="column has-text-centered">
+                    <figure class="image is-64x64 is-inline-block">
+                        <img class="is-rounded" src="{% static 'img/cerf2.png' %}"/>
+                    </figure>
+                    <h1 class="is-size-6 title">
+                        Только качественные
+                        ингридиенты.</h1>
+                        <hr class="is-size-4 has-background-warning">
+                    <p class="has-text-left">Поэтому наши
+                        пряники не только красивые,
+                        но и вкусные, что по
+                        достоинству оценять
+                        Ваши сотрудники и
+                        Клиенты</p>
+                </div>
+                <div class="column has-text-centered">
+                    <figure class="image is-64x64 is-inline-block">
+                        <img class="is-rounded" src="{% static 'img/hearth.png' %}"/>
+                    </figure>
+                    
+                    <h1 class="is-size-6 title has-text-centered">Мы любим и ценим своих Клиентов.</h1>
+                        <hr class="is-size-4 has-background-warning">
+                    <p class="has-text-left">Многие клиенты
+                        к нам повторно возвращаются и
+                        рекомендуют нас
+                        своим знакомым.</p>
+                </div>
+
+                <div class="column has-text-centered">
+                    <figure class="image is-64x64 is-inline-block">
+                        <img class="is-rounded" src="{% static 'img/timer.png' %}"/>
+                    </figure>
+                    <h1 class="is-size-6 title">Все заказы
+                        исполняются вовремя.</h1>
+                        <hr class="is-size-4 has-background-warning">
+                    <p class="has-text-left">Это особенно важно
+                        для корпоративных
+                        клиентов, которыми
+                        мы очень дорожим,
+                        поэтому мы
+                        100% гарантируем
+                        сроки поставки</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <script>
+  // burger menu
+const burgerIcon  = document.querySelector('#burger');
+const navbarMenu  = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+    navbarMenu.classList.toggle('is-active');
+});
+
+
+
+
+</script>
+</body>
+</html>
